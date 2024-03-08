@@ -10,7 +10,7 @@
 
 <body>
     <div class="container-fluid" style="display:flex; height:5rem; align-items:center; background-color:#ea9999">
-        <div class="w-50" style="margin-right:30rem">
+        <div class="w-50" style="margin-right:25rem">
             <a href="index_ptg.php" class="btn">Dashboard</a>
             <a href="buku.php" class="btn">Data Buku</a>
             <a href="anggota.php" class="btn">Data Anggota</a>
