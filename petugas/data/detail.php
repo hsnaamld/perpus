@@ -83,7 +83,6 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <a href="baca.php" class="btn btn-danger mt-4">Baca Sekarang</a>
                             </div>
                         </div>
                     </div>
