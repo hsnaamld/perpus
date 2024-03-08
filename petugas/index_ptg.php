@@ -19,7 +19,7 @@ $p = mysqli_num_rows($peminjaman);
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-sm-4 mt-3 text-center">
             <div class="card border-dark text-white" style="background-color:#ea9999">
                 <h2>Data Buku</h2>
@@ -43,13 +43,13 @@ $p = mysqli_num_rows($peminjaman);
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6" style="margin-top:10rem">
+        <div class="col-sm-6" style="margin-top:4rem">
             <div class="card">
                 <samp class="m-3"> Sebagai petugas di Perpustakaan Digital kami, Anda memiliki akses penuh untuk mengelola dan mengawasi berbagai kegiatan yang terjadi di perpustakaan. Dengan alat dan fitur yang disediakan, Anda dapat dengan mudah menjalankan tugas-tugas Anda untuk memastikan layanan yang optimal kepada pengguna kami.</samp>
             </div>
         </div>
-        <div class="col" style="margin-left:10rem; margin-top:8rem">
-            <img src="../asset/img/readd.png" alt="">
+        <div class="col" style="margin-left:10rem; margin-top:2rem">
+            <img src="../asset/img/readd.png" width="300" alt="">
         </div>
     </div>
 </div>
