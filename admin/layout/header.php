@@ -4,16 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Halaman Peminjaman</title>
+    <title>Halaman Admin</title>
     <link rel="stylesheet" href="../asset/bootsrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container-fluid" style="display:flex; height:5rem; align-items:center; background-color:#ea9999">
         <div class="w-50" style="margin-right:18rem">
-            <a href="index_pmj.php" class="btn">Dashboard</a>
-            <a href="buku.php" class="btn">Buku</a>
-            <a href="bukusaya.php" class="btn">Buku Saya</a>
+            <a href="index_adm.php" class="btn">Dashboard</a>
+            <a href="buku.php" class="btn">Data Buku</a>
+            <a href="anggota.php" class="btn">Data Anggota</a>
+            <a href="peminjaman.php" class="btn">Data Peminjaman</a>
+            <a href="laporan.php" class="btn">Laporan</a>
             <a href="../logout.php" class="btn">Logout</a>
         </div>
         <h3 class="m-2">Perpustakaan Digital</h3>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laporan Data Peminjaman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" style="margin-top:2rem;">
+        <div class="row">
+            <div class="col text-center">
+                <h3>LAPORAN DATA PEMINJAMAN BUKU</h3>
+                <h3>PERPUSTAKAAN DIGITAL</h3>
+                <span>Data ini merupakan data keseluruhan peminjaman buku perpustakaan</span>
+            </div>
+        </div>
+        <div class="row">
+        <table class="table mt-4 my-3">
+       <thead class="table table-danger">
+                <tr>
+            <th scope="col">ID Peminjaman</th>
+            <th scope="col">ID User</th>
+            <th scope="col">ID Buku</th>
+            <th scope="col">Nama Peminjam</th>
+            <th scope="col">Tanggal Peminjaman</th>
+            <th scope="col">Tanggal Pengembalian</th>
+            <th scope="col">Status Peminjaman</th>
+            </tr>
+        </thead>
+        <?php
+        include '../../koneksi.php';
+        $data=mysqli_query($koneksi, "SELECT * FROM peminjaman");
+        while ($d = mysqli_fetch_array($data)) {
+        ?>
+        <tbody>
+            <tr>
+            <th scope="row"><?php echo $d['IDpeminjaman'];?></th>
+            <td><?php echo $d['IDuser'];?></td>
+            <td><?php echo $d['IDbuku'];?></td>
+            <td><?php echo $d['nama'];?></td>
+            <td><?php echo $d['tgl_peminjaman'];?></td>
+            <td><?php echo $d['tgl_pengembalian'];?></td>
+            <td><?php echo $d['status_peminjaman'];?></td>
+            </tr>
+        </tbody>
+        <?php
+        }
+        ?>
+        </table>
+        </div>
+        <div class="row">
+            <div class="col my-3">
+                <p style="line-height: 1rem;">Mengetahui:</p>
+                <p>Kepala Dinas Perpustakaan Digital</p><br><br><br>
+                <p><b>Hasna Maulida, B.Sc., M.Sc., MBA, DBA.</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <a href="../laporan.php">Kembali</a>
+        </div>
+    </div>
+    <script>
+        window.print();
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

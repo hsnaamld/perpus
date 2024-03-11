@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="content">
-            <div class="card rounded border-dark shadow" style="margin-top:8rem">
+            <div class="card rounded border-dark shadow" style="margin-top:3rem">
                 <div class="row">
                     <div class="col mb-4" style="margin-left:4rem; margin-right:4rem">
                         <h1 class="text-center mt-3">Form Tambah Buku</h1>

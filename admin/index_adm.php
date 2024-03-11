@@ -14,38 +14,45 @@ $p = mysqli_num_rows($peminjaman);
     <div class="row">
         <div class="col">
             <div class="card border-dark" style="margin-top:3rem; text-align:center;">
-                <h2>Selamat Datang di Halaman Petugas</h2>
+                <h2>Selamat Datang di Halaman Admin</h2>
                 <h4> Perpustakaan Digital SMK Negeri 5 Bekasi</h4>
             </div>
         </div>
     </div>
     <div class="row mt-3">
-        <div class="col-sm-4 mt-3 text-center">
+        <div class="col-sm-3 mt-3 text-center">
             <div class="card border-dark text-white" style="background-color:#ea9999">
                 <h2>Data Buku</h2>
                 <h1><?php echo $b ?></h1>
                 <a href="buku.php" class="btn btn-light">Lihat Disini</a>
             </div>
         </div>
-        <div class="col-sm-4 mt-3 text-center">
+        <div class="col-sm-3 mt-3 text-center">
             <div class="card border-dark text-white" style="background-color:#e06666">
                 <h2>Data Anggota</h2>
                 <h1><?php echo $a ?></h1>
-                <a href="buku.php" class="btn btn-light">Lihat Disini</a>
+                <a href="anggota.php" class="btn btn-light">Lihat Disini</a>
             </div>
         </div>
-        <div class="col-sm-4 mt-3 text-center">
-            <div class="card border-dark bg-danger text-white bg-opacity-75">
+        <div class="col-sm-3 mt-3 text-center">
+            <div class="card border-dark text-white bg-opacity-75"  style="background-color:#e06666" >
                 <h2 class="text-white">Data Peminjaman</h2>
                 <h1><?php echo $p ?></h1>
-                <a href="buku.php" class="btn btn-light">Lihat Disini</a>
+                <a href="peminjaman.php" class="btn btn-light">Lihat Disini</a>
+            </div>
+        </div>
+        <div class="col-sm-3 mt-3 text-center">
+            <div class="card border-dark text-white bg-opacity-75" style="background-color:#ea9999">
+                <h2 class="text-white">Laporan</h2>
+                <h1>3</h1>
+                <a href="laporan.php" class="btn btn-light">Lihat Disini</a>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6" style="margin-top:4rem">
             <div class="card">
-                <samp class="m-3"> Sebagai petugas di Perpustakaan Digital kami, Anda memiliki akses penuh untuk mengelola dan mengawasi berbagai kegiatan yang terjadi di perpustakaan. Dengan alat dan fitur yang disediakan, Anda dapat dengan mudah menjalankan tugas-tugas Anda untuk memastikan layanan yang optimal kepada pengguna kami.</samp>
+                <samp class="m-3"> Di sini, Anda memiliki akses lengkap untuk mengelola perpustakaan kami. Dari mengatur koleksi buku hingga mengelola data anggota, serta bahkan mencetak laporan ke PDF, semuanya dapat Anda lakukan di sini. Terima kasih atas dedikasi Anda dalam menjaga layanan perpustakaan kami tetap teratur dan efisien. Selamat bekerja! </samp>
             </div>
         </div>
         <div class="col" style="margin-left:10rem; margin-top:2rem">

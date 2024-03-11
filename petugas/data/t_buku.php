@@ -16,3 +16,4 @@ move_uploaded_file($file_tmp, '../asset/buku/' . $buku);
 mysqli_query($koneksi, "INSERT into buku values('','$judul','$penulis','$penerbit','$tahunterbit','buku','$foto')");
 header("location:../buku.php");
 ?>
+

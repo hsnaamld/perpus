@@ -16,6 +16,13 @@
                     </div>
                     <div class="col mb-4" style="margin-left:4rem; margin-right:4rem">
                         <h1 class="text-center mt-3">Login</h1>
+                        <?php
+                if (isset($_GET['pesan'])){
+                  if ($_GET['pesan']=="gagal"){
+                  echo "<div class='alert alert-danger'>Username atau Password Salah!</div>";
+                }
+              }
+              ?>
                         <form method="post" action="aksi/cek_login.php">
                             <div class="form-group mt-3">
                                 <label for="username" class="form-label">Username</label>

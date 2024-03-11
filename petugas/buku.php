@@ -34,7 +34,7 @@ include 'layout/header.php';
                             <td><?php echo $d['judul']; ?></td>
                             <td>
                                 <a href="data/detail.php?idbuku=<?php echo $d['IDbuku']; ?>" class="btn" style="background-color:#ea9999">Detail</a>
-                                <a href="data/tambah_buku.php?idbuku=<?php echo $d['IDbuku']; ?>" class="btn" style="background-color:#e06666">Edit</a>
+                                <a href="data/edit_buku.php?idbuku=<?php echo $d['IDbuku']; ?>" class="btn" style="background-color:#e06666">Edit</a>
                                 <a href="data/delete.php?idbuku=<?php echo $d['IDbuku']; ?>" class="btn" style="background-color:#ea9999">Delete</a>
                             </td>
                         </tr>
